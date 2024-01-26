@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Wrapper Styles */
+  .wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+  
+  /* Pricing Table Heading Styles */
+  .pricing-table h2 {
+    font-size: 1.8em;
+    padding: 35px 10px;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Description Styles */
+  .description {
+    margin-top: 20px;
+    font-size: 1em;
+    padding: 0 40px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Price and Pricing Box Transition Styles */
+  .price,
+  .pricing-box {
+    transition: all ease-out 0.4s;
+  }
+  
+  /* Price Styles */
+  .price {
+    background: #4a8eb2;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    position: relative;
+    padding: 25px 15px;
+    display: block;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+  }
+  
+  .pricing-box:nth-child(2) .price {
+    background: #216f99;
+  }
+  
+  .pricing-box:nth-child(3) .price {
+    background: #02537f;
+  }
+  
+  .pricing-box:hover .price {
+    background: #ffcc00;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #333;
+  }
+  
+  /* Button Styles */
+  .btn {
+    background: #ffcc00;
+    border: 2px solid #ffcc00;
+    color: #333;
+    transition: all ease-out 0.4s;
+    border-radius: 30px;
+    padding: 12px 45px;
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover {
+    background: #333;
+    color: #fff !important;
+  }
+  
+  /* Pricing Table Divider Styles */
+  .pricing-table-divider {
+    display: block;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 30px auto 0;
+  }
+  
+  /* Pricing Table Styles */
+  .pricing-table {
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  
+  /* Pricing Box Styles */
+  .pricing-box {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgba(10, 123, 183, 0.2);
+    position: relative;
+  }
+  
+  .pricing-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* List Item Styles */
+  .pricing-table ul li {
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: #444;
+  }
+  
+  /* List Styles */
+  .pricing-table ul {
+    color: #333;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 767px) {
+    .pricing-table {
+      grid-template-columns: 1fr;
+    }
+  
+    .pricing-box {
+      order: 2;
+    }
+  
+    .pricing-box:nth-child(odd) {
+      order: 1;
+    }
+  }
+  
